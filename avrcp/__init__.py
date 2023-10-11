@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import dbus, dbus.mainloop.glib, sys
 import time
-from gi.repository import GLib
+#from gi.repository import GLib
 
 playback_status = ''
 current_info = ['No Title', 'No Artist', 'No Album', 'No Durration', 'No Position']

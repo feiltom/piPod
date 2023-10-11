@@ -646,7 +646,7 @@ def parsedata(parsethis):
         #sersend(cmdr([0x04],resptype + tracklengthbytes + playposbytes + PlayStatus))
         sersend(cmdr([0x04],resptype + list(avrcp.TrackDuration().to_bytes(4, byteorder='big',signed='True')) + list(avrcp.TrackPosition().to_bytes(4, byteorder='big',signed='True')) + PlayStatus))
         
-   else:
+    else:
         TextColor='\033[91m'
         ResetText='\033[0m'
         print(TextColor + 'Unknown: ' + str(parsethis) +' '+ parsethis.hex()  +ResetText)
